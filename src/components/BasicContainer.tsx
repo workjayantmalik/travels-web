@@ -1,4 +1,5 @@
 import React from "react";
+import { BasicFooter } from "./BasicFooter";
 import { BasicHeader } from "./BasicHeader";
 
 interface IBasicContainerProps {
@@ -14,6 +15,7 @@ export const BasicContainer: React.FC<IBasicContainerProps> = ({
       {/* Page Content */}
       <main className="flex flex-auto flex-col max-w-full">{children}</main>
       {/* END Page Content */}
+      <BasicFooter />
     </div>
   );
 };
